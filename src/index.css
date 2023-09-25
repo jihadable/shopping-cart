@@ -7,7 +7,7 @@
 
 body{
     background-color: #f3f4f6;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@ body{
     right: 0;
     padding: 1rem 10vw;
     background-color: white;
-    box-shadow: 0 3px 20px rgb(0,0,0,.2);
+    box-shadow: 0 3px 20px rgb(0,0,0,.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -303,6 +303,32 @@ body{
                 cursor: pointer;
                 background-color: black;
                 color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .navbar{
+        padding: 1rem;
+
+        .shopping-cart{
+            width: 100%;
+        }
+    }
+
+    .items{
+        margin: 5rem 0;
+        width: 100%;
+        padding: 0 1rem;
+
+        .item{
+            flex-direction: column;
+
+            .img{
+                height: calc(100vw - 2rem);
             }
         }
     }
